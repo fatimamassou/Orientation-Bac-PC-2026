@@ -25,9 +25,10 @@ header{
   position:relative;
   overflow:hidden;
 }
+
 .navbar {
   width: 100%;
-  padding: 18px 8%;
+  padding: 18px 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,11 +39,22 @@ header{
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  color: rgb(18, 89, 148);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .logo a {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #111;
+  color: #3b2213;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -62,7 +74,7 @@ header{
 }
 
 .nav-links a:hover {
-  color: #2563eb;
+  color: #ff9300;
 }
 
 .menu-btn {
@@ -98,8 +110,8 @@ header{
 
 .hero a{
   text-decoration:none;
-  background:white;
-  color:#4f46e5;
+  color:white;
+  background:linear-gradient(135deg,#2698d1,rgb(49, 46, 129));
   padding:14px 28px;
   border-radius:50px;
   font-weight:600;
@@ -174,7 +186,7 @@ header{
 
 .open-card a{
   text-decoration:none;
-  color:#4f46e5;
+  color:#2698d1;
   font-weight:600;
 }
 
@@ -192,7 +204,7 @@ header{
 
 .section-title h2{
   font-size:2.3rem;
-  color:#312e81;
+  color:#125994;
   margin-bottom:10px;
 }
 
@@ -220,7 +232,7 @@ header{
 }
 
 .card h3{
-  color:#4f46e5;
+  color:#2698d1;
   margin-bottom:15px;
   font-size:1.4rem;
 }
@@ -246,7 +258,7 @@ header{
 
 .tips{
   margin-top:80px;
-  background:linear-gradient(135deg,#312e81,#4f46e5);
+  background:linear-gradient(135deg,#312e81,#2698d1);
   color:white;
   padding:50px;
   border-radius:30px;
@@ -371,7 +383,7 @@ footer{
 }
 
 .popup-content h2{
-  color:#4f46e5;
+  color:#2698d1;
   margin-bottom:15px;
 }
 
@@ -393,7 +405,7 @@ footer{
   right:15px;
   border:none;
   background:#ede9fe;
-  color:#4f46e5;
+  color:#2698d1;
   width:40px;
   height:40px;
   border-radius:50%;
@@ -403,7 +415,7 @@ footer{
 }
 
 .close-btn:hover{
-  background:#4f46e5;
+  background:#2698d1;
   color:white;
 }
 
@@ -420,7 +432,7 @@ footer{
 }
 
 .portfolio-btn:hover{
-  background:#4f46e5;
+  background:#2698d1;
   transform:translateY(-3px);
 }
 
