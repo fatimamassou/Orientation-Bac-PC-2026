@@ -83,11 +83,18 @@ header::after{
   padding:80px 20px;
 }
 
-.open-cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-  margin-top:40px;
+.mySwiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.open-card {
+  width: 320px;
 }
 
 .open-card{
