@@ -7,6 +7,7 @@
     <title>Orientation Bac PC 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -33,50 +34,61 @@
       <p>Les écoles et concours actuellement ouverts ou bientôt disponibles pour les étudiants du Bac.</p>
     </div>
 
-    <div class="open-cards">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-      <div class="open-card">
-        <span class="status open">Bientôt</span>
-        <h3>ENSA Maroc</h3>
-        <p>Concours d'accès aux Écoles Nationales des Sciences Appliquées.</p>
+        <!-- OPEN FIRST -->
+        <div class="swiper-slide">
+          <div class="open-card">
+            <span class="status urgent">Ouvert</span>
+            <h3>OFPPT</h3>
+            <p>Formations techniques et professionnelles ouvertes.</p>
 
-        <a href="https://www.cursussup.gov.ma/" target="_blank">
-          Voir plus
-        </a>
+            <a href="https://www.ofppt.ma/" target="_blank">
+              Voir plus
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="open-card">
+            <span class="status urgent">Ouvert</span>
+            <h3>BTS Maroc</h3>
+            <p>Brevet de Technicien Supérieur.</p>
+
+            <a href="https://www.e-bts.men.gov.ma/" target="_blank">
+              Voir plus
+            </a>
+          </div>
+        </div>
+
+        <!-- BIENTÔT -->
+        <div class="swiper-slide">
+          <div class="open-card">
+            <span class="status open">Bientôt</span>
+            <h3>ENSA Maroc</h3>
+            <p>Concours d'accès aux ENSA.</p>
+
+            <a href="https://www.cursussup.gov.ma/" target="_blank">
+              Voir plus
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="open-card">
+            <span class="status open">Bientôt</span>
+            <h3>ENCG Maroc</h3>
+            <p>Concours TAFEM.</p>
+
+            <a href="https://www.cursussup.gov.ma/" target="_blank">
+              Voir plus
+            </a>
+          </div>
+        </div>
+
       </div>
-
-      <div class="open-card">
-        <span class="status open">Bientôt</span>
-        <h3>ENCG Maroc</h3>
-        <p>Concours TAFEM pour les écoles de commerce et gestion.</p>
-
-        <a href="https://www.cursussup.gov.ma/" target="_blank">
-          Voir plus
-        </a>
-      </div>
-
-      <div class="open-card">
-        <span class="status urgent">Ouvert</span>
-        <h3>OFPPT</h3>
-        <p>Formations techniques et professionnelles ouvertes.</p>
-
-        <a href="https://www.ofppt.ma/" target="_blank">
-          Voir plus
-        </a>
-      </div>
-
-      <div class="open-card">
-        <span class="status open">Bientôt</span>
-        <h3>FST Maroc</h3>
-        <p>Facultés des Sciences et Techniques.</p>
-
-        <a href="https://www.cursussup.gov.ma/" target="_blank">
-          Voir plus
-        </a>
-      </div>
-
     </div>
-
   </section>
 
   <section class="container" id="schools">
@@ -324,5 +336,31 @@
     </div>
   </div>
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 20,
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+
+        768: {
+          slidesPerView: 2,
+        },
+
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
 </body>
 </html>
